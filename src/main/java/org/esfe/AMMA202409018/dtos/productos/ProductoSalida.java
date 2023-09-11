@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Setter
 public class ProductoSalida implements Serializable {
     private Integer id;
-    private String nombreMABT;
-    private String descripcionMABT;
+    private String nombreAMMA;
+    private String descripcionAMMA;
     private BigDecimal precio;
 }

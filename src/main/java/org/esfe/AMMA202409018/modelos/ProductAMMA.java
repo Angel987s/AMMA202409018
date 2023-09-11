@@ -16,10 +16,10 @@ public class ProductAMMA {
     private Integer id;
 
     @Column(name = "nombre_amma", nullable = false)
-    private String nombreMABT;
+    private String nombreAMMA;
 
     @Column(name = "descripcion_amma")
-    private String descripcionMABT;
+    private String descripcionAMMA;
 
     @Column(name = "precio", nullable = false)
     private BigDecimal precio;
