@@ -19,15 +19,6 @@ public class ProductoController {
     @Autowired
     private IProductoService productoService;
 
-    @GetMapping
-    public ResponseEntity<Page<ProductoSalida>> mostrarTodosPaginados(Pageable pageable){
-        Page<ProductoSalida> productos = productoService.obtenerTodosPaginados(pageable);
-        if(productos.hasContent()){
-            return ResponseEntity.ok(productos);
-        }
-
-        return ResponseEntity.notFound().build();
-    }
 
     @GetMapping("/lista")
     public ResponseEntity<List<ProductoSalida>> mostrarTodos(){
